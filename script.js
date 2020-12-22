@@ -1,4 +1,4 @@
-alert("If you are epileptic, pay attention and DON'T YOU DARE TO TOUCH THE BUTTON");
+alert("The Night Watch says= DON'T YOU DARE TO TOUCH THE BUTTON");
 
 
 function countdown() {
@@ -32,5 +32,5 @@ function winterIsComing(){
 
 function setColor() {
         let body = document.body;
-        body.style.backgroundColor = body.style.backgroundColor == "red" ? "black" : "red";
+        body.style.backgroundColor = body.style.backgroundColor == "black" ? "lightblue" : "black";
       }
