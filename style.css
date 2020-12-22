@@ -1,0 +1,32 @@
+body{
+    background-color:red;
+    /* background-image: url('https://www.wallpapertip.com/wmimgs/27-273004_grunge-warning-industrial-plants-danger-stripes-industrial-danger.jpg');
+    background-repeat: no-repeat; */
+
+  }
+  
+  h1 { color:white;
+       font-size: 90px;
+       text-align: center;
+        margin-top: 6%;
+        font-family: 'Special Elite', cursive;
+  }
+  
+  button {
+          border-radius: 50%;
+          margin-left: 25%;
+          background-image: url('https://www.gifmania.com/Gif-Animados-Mensajes/Imagenes-Peligro/Precaucion-84726.gif');
+          text-align: center;
+          font-size: 40px;
+          font-family: 'Special Elite', cursive;
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          text-align: center;
+          width: 700px;
+          height: 300px;
+          color: black;
+     }
+  
+  button:hover {
+    background-color: red;
+  }
+  
