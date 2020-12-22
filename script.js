@@ -1,12 +1,11 @@
-alert('If you are epileptic, pay attention and DONT YOU DARE TO TOUCH THE BUTTON');
-document.getElementById('Nightking').style.display = 'none';
+alert("If you are epileptic, pay attention and DON'T YOU DARE TO TOUCH THE BUTTON");
 
 
 function countdown() {
     
-    var backgroundColor = setInterval(setColor, 300);
+    var backgroundColor = setInterval(setColor, 200);
     
-    let secs= 3;
+    let secs= 10;
     
     var downloadTimer = setInterval( function() {
         secs--;
@@ -26,16 +25,12 @@ function countdown() {
 }
 
 function winterIsComing(){
-    
-        // const buttonToImg= document.querySelector("warning");
-        // const newInput= document.createElement("img");
-        // newInput.value= "https://i.pinimg.com/originals/28/9d/64/289d6444052720ffc35edd9f9006713f.gif";
-
+   
     document.getElementById("title").innerHTML = "WINTER IS COMING";
-    // buttonToImg.replaceWith('newInput'>);  
+
 };
 
 function setColor() {
-        var x = document.body;
-        x.style.backgroundColor = x.style.backgroundColor == "red" ? "black" : "red";
+        let body = document.body;
+        body.style.backgroundColor = body.style.backgroundColor == "red" ? "black" : "red";
       }
