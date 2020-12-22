@@ -1,5 +1,5 @@
 body{
-    background-color:red;
+    background-color:black;
     /* background-image: url('https://www.wallpapertip.com/wmimgs/27-273004_grunge-warning-industrial-plants-danger-stripes-industrial-danger.jpg');
     background-repeat: no-repeat; */
 
@@ -30,3 +30,8 @@ body{
     background-color: red;
   }
   
+  img {
+      margin-left: 10%;
+      height: 400px;
+      width: 1200px;
+  }
