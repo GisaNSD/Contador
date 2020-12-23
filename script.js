@@ -42,7 +42,7 @@ function changeTitle(){
 
 function displayChanges(){
 
-    document.getElementById('Nightking').style.display = 'flex';
+    document.getElementById('Nightking').style.display = 'block';
     warningId.style.display = 'none';
 
 }
