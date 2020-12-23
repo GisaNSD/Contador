@@ -4,18 +4,19 @@ alert("The Night Watch says= DON'T YOU DARE TO TOUCH THE BUTTON");
 let warningId= document.getElementById("warning");
 let audioEtiqueta = document.querySelector("audio")
 
+
 warningId.addEventListener("click", () => {
     audioEtiqueta.setAttribute("src", "got.mp3")
     audioEtiqueta.play()
     console.log(`Reproduciendo: ${audioEtiqueta.src}`)
-  })
+  })    
 
 
 function countdown() {
     
     var backgroundColor = setInterval(setColor, 200);
  
-    let secs= 10;
+    let secs= 2;
     
     var downloadTimer = setInterval( function() {
         secs--;
@@ -41,7 +42,7 @@ function changeTitle(){
 
 function displayChanges(){
 
-    document.getElementById('Nightking').style.display = 'block';
+    document.getElementById('Nightking').style.display = 'flex';
     warningId.style.display = 'none';
 
 }
