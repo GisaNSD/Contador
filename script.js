@@ -16,7 +16,7 @@ function countdown() {
     
     var backgroundColor = setInterval(setColor, 200);
  
-    let secs= 2;
+    let secs= 10;
     
     var downloadTimer = setInterval( function() {
         secs--;
