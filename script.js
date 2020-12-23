@@ -1,34 +1,50 @@
 alert("The Night Watch says= DON'T YOU DARE TO TOUCH THE BUTTON");
 
 
+let warningId= document.getElementById("warning");
+let audioEtiqueta = document.querySelector("audio")
+
+warningId.addEventListener("click", () => {
+    audioEtiqueta.setAttribute("src", "got.mp3")
+    audioEtiqueta.play()
+    console.log(`Reproduciendo: ${audioEtiqueta.src}`)
+  })
+
+
 function countdown() {
     
     var backgroundColor = setInterval(setColor, 200);
-    
+ 
     let secs= 10;
     
     var downloadTimer = setInterval( function() {
         secs--;
-        document.getElementById("warning").textContent = secs;
+        warningId.textContent = secs;
+        warningId.disabled = true;
         
         if(secs == 0){
-            winterIsComing();
-            document.getElementById('Nightking').style.display = 'block';
-            document.getElementById('warning').style.display = 'none';
+            changeTitle();
+            displayChanges();
             clearInterval(backgroundColor);
             clearInterval(downloadTimer);
         }
         
-        document.getElementById("warning").disabled = true;
     } ,1000);
     
 }
 
-function winterIsComing(){
+function changeTitle(){
    
     document.getElementById("title").innerHTML = "WINTER IS COMING";
 
 };
+
+function displayChanges(){
+
+    document.getElementById('Nightking').style.display = 'block';
+    warningId.style.display = 'none';
+
+}
 
 function setColor() {
         let body = document.body;
